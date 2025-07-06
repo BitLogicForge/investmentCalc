@@ -53,6 +53,44 @@ npm run dev
 - `npm run lint` - Run ESLint for code quality checks
 - `npm run clean` - Clean install (removes node_modules and package-lock.json)
 - `npm run fresh` - Alias for clean install
+- `npm run predeploy` - Build the project before deployment
+- `npm run deploy` - Deploy to GitHub Pages
+
+## 🚀 Deployment
+
+### GitHub Pages
+
+This project is configured for easy deployment to GitHub Pages:
+
+1. **Setup Repository**:
+
+   - Push your code to a GitHub repository
+   - Update the `homepage` field in `package.json` with your GitHub username and repository name
+
+2. **Deploy**:
+
+   ```bash
+   npm run deploy
+   ```
+
+3. **Configure GitHub Pages**:
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Select "Deploy from a branch" as source
+   - Choose `gh-pages` branch
+   - Your app will be available at `https://yourusername.github.io/investmentCalc`
+
+### Manual Deployment
+
+You can also deploy the built files manually:
+
+1. Build the project:
+
+   ```bash
+   npm run build
+   ```
+
+2. The `dist` folder contains all the files needed for deployment to any static hosting service.
 
 ## 🏗️ Project Structure
 
