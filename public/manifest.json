@@ -1,0 +1,27 @@
+{
+  "name": "Investment Calculator",
+  "short_name": "InvestCalc",
+  "description": "Calculate compound interest and investment growth with customizable scenarios",
+  "start_url": "/investmentCalc/",
+  "display": "standalone",
+  "background_color": "#303b37",
+  "theme_color": "#303b37",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/investment-calculator-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/investment-calculator-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "productivity", "business"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
