@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bitlogicforge.github.io/investmentCalc/sitemap.xml
+
+# Block access to development files
+Disallow: /src/
+Disallow: /.git/
+Disallow: /node_modules/
