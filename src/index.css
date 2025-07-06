@@ -651,6 +651,106 @@ main {
   padding: 0 1rem;
 }
 
+/* Presets Section */
+#presets {
+  max-width: 80rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+#presets h2 {
+  text-align: center;
+  color: #83e6c0;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.presets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.preset-card {
+  background: linear-gradient(180deg, #2b4a42, #1a332a);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #76c0ae;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.preset-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(131, 230, 192, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: transform 0.5s;
+  opacity: 0;
+}
+
+.preset-card:hover::before {
+  opacity: 1;
+  transform: rotate(45deg) translate(50%, 50%);
+}
+
+.preset-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(118, 192, 174, 0.3);
+}
+
+.preset-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #83e6c0;
+  font-size: 1.2rem;
+}
+
+.preset-description {
+  margin: 0 0 1rem 0;
+  color: #c2e9e0;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.preset-details {
+  margin: 1rem 0;
+}
+
+.preset-details p {
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+  color: #c2e9e0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.apply-preset-btn {
+  width: 100%;
+  background: linear-gradient(180deg, #83e6c0, #76c0ae);
+  color: #1a1f1d;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.apply-preset-btn:hover {
+  background: linear-gradient(180deg, #76c0ae, #83e6c0);
+  transform: translateY(-1px);
+}
+
 /* Improved spacing for larger screens */
 @media (min-width: 1400px) {
   body {
