@@ -86,7 +86,11 @@ html {
   border-spacing: 1rem;
   text-align: right;
   width: 95%;
-  background: linear-gradient(180deg, rgba(43, 74, 66, 0.3), rgba(26, 51, 42, 0.3));
+  background: linear-gradient(
+    180deg,
+    rgba(43, 74, 66, 0.3),
+    rgba(26, 51, 42, 0.3)
+  );
   border-radius: 12px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(118, 192, 174, 0.2);
@@ -470,28 +474,28 @@ html {
   #header {
     margin: 4rem auto;
   }
-  
+
   #user-input {
     max-width: 60rem;
     padding: 2rem;
   }
-  
+
   .input-group {
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
   }
-  
+
   #result {
     max-width: 90rem;
     padding: 2rem;
   }
-  
+
   .summary-cards {
     max-width: 90rem;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
-  
+
   .presets-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
@@ -504,7 +508,7 @@ html {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-  
+
   .summary-cards {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -516,22 +520,22 @@ html {
     max-width: 45rem;
     padding: 1.5rem;
   }
-  
+
   .input-group {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  
+
   #result {
     max-width: 70rem;
     font-size: 0.9rem;
   }
-  
+
   .summary-cards {
     grid-template-columns: repeat(2, 1fr);
     max-width: 70rem;
   }
-  
+
   .presets-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -544,18 +548,18 @@ html {
     margin: 2rem auto;
     padding: 0 1rem;
   }
-  
+
   #user-input {
     max-width: 95%;
     margin: 1rem auto;
     padding: 1rem;
   }
-  
+
   .input-group {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   #result {
     max-width: 95%;
     font-size: 0.75rem;
@@ -563,7 +567,7 @@ html {
     padding: 1rem;
     overflow-x: auto;
   }
-  
+
   .summary-cards {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
@@ -586,17 +590,17 @@ html {
   #result tbody tr:hover {
     transform: none;
   }
-  
+
   .presets-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   #presets {
     max-width: 95%;
     padding: 1rem;
   }
-  
+
   .table-controls,
   .summary-cards {
     padding: 0 0.5rem;
@@ -608,22 +612,22 @@ html {
   #header h1 {
     font-size: 1.3rem;
   }
-  
+
   #user-input {
     margin: 0.5rem auto;
     padding: 0.75rem;
   }
-  
+
   .summary-cards {
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
-  
+
   #result {
     font-size: 0.7rem;
     border-spacing: 0.25rem;
   }
-  
+
   .btn-medium {
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
@@ -756,19 +760,19 @@ main {
   body {
     padding: 0 2rem;
   }
-  
+
   #header {
     margin: 5rem auto;
   }
-  
+
   #user-input {
     max-width: 70rem;
   }
-  
+
   #result {
     max-width: 100rem;
   }
-  
+
   .summary-cards {
     max-width: 100rem;
   }
